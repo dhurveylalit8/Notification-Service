@@ -31,7 +31,7 @@ exports.acceptNotificationRequest = async (req, res) => {
         trackingId : notification._id
     });
 }catch(err){
-    console.log("Error while storing the notification request", arr.message);
+    console.log("Error while storing the notification request", err.message);
     return res.status(500).send({
         message : "Internal server error"
     })
