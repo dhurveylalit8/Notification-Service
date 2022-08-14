@@ -13,5 +13,5 @@ module.exports = (app) => {
      * 
      * GET /notiserv/api/v1/notifications/2161fs611615dsfadf56
      */
-    app.get("/notiserv/api/v1/notifications/: id", notificationController.getNotificationDetails)
+    app.get("/notiserv/api/v1/notifications/:id", notificationController.getNotificationDetails)
 }
